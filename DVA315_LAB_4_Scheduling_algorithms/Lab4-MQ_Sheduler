@@ -1,0 +1,67 @@
+OS_cycles: 0;Task 2113 is executing with 5 quanta left - Total context switches: 1 
+OS_cycles: 1;Task 2114 is executing with 5 quanta left - Total context switches: 2 
+OS_cycles: 2;Task 2116 is executing with 2 quanta left - Total context switches: 3 
+OS_cycles: 3;Task 2113 is executing with 4 quanta left - Total context switches: 4 
+OS_cycles: 4;Task 2113 is executing with 3 quanta left - Total context switches: 4 
+OS_cycles: 5;Task 2114 is executing with 4 quanta left - Total context switches: 5 
+OS_cycles: 6;Task 2114 is executing with 3 quanta left - Total context switches: 5 
+OS_cycles: 7;Task 2116 is executing with 1 quanta left - Total context switches: 6 
+OS_cycles: 8;Task 2118 is executing with 3 quanta left - Total context switches: 7 
+OS_cycles: 9;Task 2116 has executed and finished its quanta - Total context switches: 8 
+OS_cycles: 10;Task 2118 is executing with 2 quanta left - Total context switches: 9 
+OS_cycles: 11;Task 2118 is executing with 1 quanta left - Total context switches: 9 
+OS_cycles: 12;Task 2113 is executing with 2 quanta left - Total context switches: 10 
+OS_cycles: 13;Task 2117 is executing with 4 quanta left - Total context switches: 11 
+OS_cycles: 14;Task 2117 is executing with 3 quanta left - Total context switches: 11 
+OS_cycles: 15;Task 2117 is executing with 2 quanta left - Total context switches: 11 
+OS_cycles: 16;Task 2113 is executing with 1 quanta left - Total context switches: 12 
+OS_cycles: 17;Task 2113 has executed and finished its quanta - Total context switches: 12 
+OS_cycles: 18;Task 2112 is executing with 1 quanta left - Total context switches: 13 
+OS_cycles: 19;Task 2115 is executing with 7 quanta left - Total context switches: 14 
+OS_cycles: 20;Task 2112 has executed and finished its quanta - Total context switches: 15 
+OS_cycles: 21;Task 2115 is executing with 6 quanta left - Total context switches: 16 
+OS_cycles: 22;Task 2115 is executing with 5 quanta left - Total context switches: 16 
+OS_cycles: 23;Task 2114 is executing with 2 quanta left - Total context switches: 17 
+OS_cycles: 24;Task 2114 is executing with 1 quanta left - Total context switches: 17 
+OS_cycles: 25;Task 2114 has executed and finished its quanta - Total context switches: 17 
+OS_cycles: 26;Task 2118 has executed and finished its quanta - Total context switches: 18 
+OS_cycles: 27;Task 2117 is executing with 1 quanta left - Total context switches: 19 
+OS_cycles: 28;Task 2117 has executed and finished its quanta - Total context switches: 19 
+OS_cycles: 29;Task 2115 is executing with 4 quanta left - Total context switches: 20 
+OS_cycles: 30;Task 2115 is executing with 3 quanta left - Total context switches: 20 
+OS_cycles: 31;Task 2115 is executing with 2 quanta left - Total context switches: 20 
+OS_cycles: 32;Task 2115 is executing with 1 quanta left - Total context switches: 20 
+OS_cycles: 33;Task 2115 has executed and finished its quanta - Total context switches: 20 
+RETURNED IDLE TASKOS_cycles: 34;Idle task is executing - Total context switches: 21 
+RETURNED IDLE TASKOS_cycles: 35;Idle task is executing - Total context switches: 21 
+RETURNED IDLE TASKOS_cycles: 36;Idle task is executing - Total context switches: 21 
+RETURNED IDLE TASKOS_cycles: 37;Idle task is executing - Total context switches: 21 
+RETURNED IDLE TASKOS_cycles: 38;Idle task is executing - Total context switches: 21 
+RETURNED IDLE TASKOS_cycles: 39;Idle task is executing - Total context switches: 21
+
+task* putFirst(task* head, task data)
+{
+	if(head == NULL)
+		head = create(data.deadline, data.period, data.release_time, data.priority, data.ID, data.quantum, NULL);
+	else
+	{
+		task* front = create(data.deadline, data.period, data.release_time, data.priority, data.ID, data.quantum, NULL);
+		front->next = head;
+		head = front;
+	}
+	return head;
+}
+
+ if (temporary->priority == 1)
+					high_queue = push(high_queue, *temporary);
+				else if (temporary->priority == 2)
+					medium_queue = push(medium_queue, *temporary);
+				else if (temporary->priority == 3)
+					medium_queue = putFirst(medium_queue, *temporary);
+				else if (temporary->priority % 4 == 0)
+					low_queue = push(low_queue, *temporary);
+				else
+					low_queue = putFirst(low_queue, *temporary);
+				ready_queue = remove_node(ready_queue, temporary);
+				temporary = ready_queue;
+
