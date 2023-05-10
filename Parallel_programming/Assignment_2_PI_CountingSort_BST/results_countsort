@@ -1,0 +1,154 @@
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 90
+seq, elapsed time = 0.347 seconds, check passed = y
+par, elapsed time = 0.190 seconds (1.8x speedup), check passed = y
+par, elapsed time = 0.139 seconds (2.5x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 100
+seq, elapsed time = 0.307 seconds, check passed = y
+par, elapsed time = 0.198 seconds (1.6x speedup), check passed = y
+par, elapsed time = 0.139 seconds (2.2x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 200
+seq, elapsed time = 0.317 seconds, check passed = y
+par, elapsed time = 0.173 seconds (1.8x speedup), check passed = y
+par, elapsed time = 0.167 seconds (1.9x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 300
+seq, elapsed time = 0.335 seconds, check passed = y
+par, elapsed time = 0.186 seconds (1.8x speedup), check passed = y
+par, elapsed time = 0.147 seconds (2.3x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 400
+seq, elapsed time = 0.349 seconds, check passed = y
+par, elapsed time = 0.170 seconds (2.1x speedup), check passed = y
+par, elapsed time = 0.175 seconds (2.0x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 500
+seq, elapsed time = 0.363 seconds, check passed = y
+par, elapsed time = 0.150 seconds (2.4x speedup), check passed = y
+par, elapsed time = 0.166 seconds (2.2x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 600
+seq, elapsed time = 0.375 seconds, check passed = y
+par, elapsed time = 0.138 seconds (2.7x speedup), check passed = y
+par, elapsed time = 0.170 seconds (2.2x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 700
+seq, elapsed time = 0.388 seconds, check passed = y
+par, elapsed time = 0.158 seconds (2.5x speedup), check passed = y
+par, elapsed time = 0.185 seconds (2.1x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 800
+seq, elapsed time = 0.396 seconds, check passed = y
+par, elapsed time = 0.158 seconds (2.5x speedup), check passed = y
+par, elapsed time = 0.212 seconds (1.9x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 900
+seq, elapsed time = 0.410 seconds, check passed = y
+par, elapsed time = 0.169 seconds (2.4x speedup), check passed = y
+par, elapsed time = 0.211 seconds (1.9x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 1000
+seq, elapsed time = 0.419 seconds, check passed = y
+par, elapsed time = 0.174 seconds (2.4x speedup), check passed = y
+par, elapsed time = 0.228 seconds (1.8x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 1500
+seq, elapsed time = 0.485 seconds, check passed = y
+par, elapsed time = 0.268 seconds (1.8x speedup), check passed = y
+par, elapsed time = 0.326 seconds (1.5x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 2000
+seq, elapsed time = 0.577 seconds, check passed = y
+par, elapsed time = 0.327 seconds (1.8x speedup), check passed = y
+par, elapsed time = 0.385 seconds (1.5x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 3000
+seq, elapsed time = 0.754 seconds, check passed = y
+par, elapsed time = 0.395 seconds (1.9x speedup), check passed = y
+par, elapsed time = 0.469 seconds (1.6x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 4000
+seq, elapsed time = 0.870 seconds, check passed = y
+par, elapsed time = 0.427 seconds (2.0x speedup), check passed = y
+par, elapsed time = 0.542 seconds (1.6x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 5000
+seq, elapsed time = 0.946 seconds, check passed = y
+par, elapsed time = 0.449 seconds (2.1x speedup), check passed = y
+par, elapsed time = 0.612 seconds (1.5x speedup), check passed = y
+mareks@Mareks-Linux:~/Desktop/lab2$ make countingsort 
+g++ -O1 -Wall -Dnproc=`nproc` -Dcachelinesize=`getconf LEVEL1_DCACHE_LINESIZE` -pedantic -fopenmp -Wall -Wextra -Werror countingsort.cpp -o ./bin/countingsort && ./bin/countingsort 100000000
+n = 100000000
+nproc = 4
+cachelinesize = 64 byte
+k = 6000
+seq, elapsed time = 0.999 seconds, check passed = y
+par, elapsed time = 0.466 seconds (2.1x speedup), check passed = y
+par, elapsed time = 0.763 seconds (1.3x speedup), check passed = y
+
